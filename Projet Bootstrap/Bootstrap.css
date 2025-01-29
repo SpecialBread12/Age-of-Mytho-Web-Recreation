@@ -1,0 +1,19 @@
+header {
+  height: 80vh;
+}
+
+#carouselExemple {
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+.container .carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mission</title>
+    <link rel="stylesheet" href="StyleCss/General.css" />
+    <link rel="stylesheet" href="StyleCss/Mission.css"/>
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+  integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+  crossorigin="anonymous"
+/>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html"><span class="fab fa-fort-awesome-alt"></span>Accueil</a></li>
+        <li><a href="Article_Index.html">Article<span class="fas fa-sort-down"></span></a>
+        <ul>
+          <li><a href="Article1.html">Age of Mythology</a></li>
+          <li><a href="Article2.html">Age of Mythology EX:Titan</a></li>
+          <li>
+            <a href="Article3.html">Age of Mythology EX:Tale of the dragon</a>
+          </li>
+        </ul>
+        <li><a href="Mission.html">Mission</a></li>
+        <li><a href="Membre.html"><span class="fas fa-id-card"></span>Membre</a></li>
+        <li><a href="Contact.html"><span class="fas fa-user-secret"></span>Contact</a></li>
+      </ul>
+    </nav>
+    <h1>Mission</h1>
+  </header>
+  <table class="tableau">
+    <caption>
+      Tableau des jeux
+    </caption>
+    <tr>
+      <th colspan="2">Nom</th>
+      <th>Prix à sa sortie</th>
+      <th>Année de sortie</th>
+      <th>Point d'appréciation</th>
+    </tr>
+    <tr>
+      <td colspan="2">Age of Mythology</td>
+      <td>69.99$</td>
+      <td>30 octobre 2002</td>
+      <td>89/100</td>
+    </tr>
+    <tr>
+      <td colspan="2">Age of Mythology: Titan</td>
+      <td>44.99$</td>
+      <td>30 septembre 2003</td>
+      <td>84/100</td>
+    </tr>
+    <tr>
+      <td colspan="2">Age of Mythology: Tale of the dragon</td>
+      <td>10.99$</td>
+      <td>28 janvier 2016</td>
+      <td>37/100</td>
+    </tr>
+    <tr>
+      <th colspan="2">Version disponible</th>
+      <th colspan="2">Meilleur version</th>
+      <th>Prix de la meilleur version + Raison</th>
+    </tr>
+    <tr>
+      <td colspan="2">Steam ou version CD</td>
+      <td colspan="2" rowspan="3">Steam</td>
+      <td>32.99$ Seule, 38.69$ avec TOTD. Il est encore mit à jour</td>
+    </tr>
+    <tr>
+      <td colspan="2">Steam ou Patch CD</td>
+      <td>Il est inclut dans la version de base</td>
+    </tr>
+    <tr>
+      <td colspan="2">Steam</td>
+      <td>10.99$ seul, 6.70$ si acheté en bundle avec le jeu de base. C'est sa seul version disponible.</td>
+    </tr>
+  </table>
+  <div class="conteneur-slider">
+    <div class="conteneur-images">
+      <img src="image/1.jpg" alt="img1" class="active">
+      <img src="image/2.jpg" alt="img1">
+      <img src="image/3.jpg" alt="img1">
+      <img src="image/4.jpg" alt="img1">
+      <img src="image/5.jpg" alt="img1">
+    </div>
+    <div class="commandes">
+      <button class="gauche">
+        <img src="image/left.svg">
+      </button>
+      <button class="droite">
+        <img src="image/right.svg">
+      </button>
+    </div>
+    <div class="cercles">
+      <button data-clic="1" class="cercle active-cercle"></button>
+      <button data-clic="2" class="cercle"></button>
+      <button data-clic="3" class="cercle"></button>
+      <button data-clic="4" class="cercle"></button>
+      <button data-clic="5" class="cercle"></button>
+    </div>
+  </div>
+  <footer class="absolute">
+    <a href="https://discord.com"><div id="Discord"></div></a>
+    <a href="https://github.com"><div id="Github"></div></a>
+    <a href="https://www.reddit.com/"><div id="Reddit"></div></a>
+    <a href="https://store.steampowered.com/"><div id="Steam"></div></a>
+    <a href="https://www.youtube.com/"><div id="Youtube"></div></a>
+    <h5>©opyright Frédérick Paradis Pouliot TechnoWeb 2020-2021</h5>
+    <script  src="scripts/LienWeb.js"></script>
+  </footer>
+  <script src="scripts/slider.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Membre</title>
+    <link rel="stylesheet" href="StyleCss/General.css" />
+    <link rel="stylesheet" href="StyleCss/Membre.css">
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+  integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+  crossorigin="anonymous"
+/>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <span class="navbar-toggle" id="js-navbar-toggle">
+        <!-- icône hamburger avec animation CSS -->
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </span>
+      <ul class="menu" id="js-menu">
+        <li><a href="index.html"><span class="fab fa-fort-awesome-alt"></span>Accueil</a></li>
+        <li><a href="Article_Index.html">Article<span class="fas fa-sort-down"></span></a>
+        <ul>
+          <li><a href="Article1.html">Age of Mythology</a></li>
+          <li><a href="Article2.html">Age of Mythology EX:Titan</a></li>
+          <li>
+            <a href="Article3.html">Age of Mythology EX:Tale of the dragon</a>
+          </li>
+        </ul>
+        <li><a href="Mission.html">Mission</a></li>
+        <li><a href="Membre.html"><span class="fas fa-id-card"></span>Membre</a></li>
+        <li><a href="Contact.html"><span class="fas fa-user-secret"></span>Contact</a></li>
+        <li><a href="FAQ.html">FAQ</a></li>
+      </ul>
+    </nav>
+    <!--pseudo,mots de passe-->
+    <h1>Membre</h1>
+
+  </header>
+  <div id="container">
+  <form action="Membre.html" method="POST" onsubmit="return Validate()" name="form">
+ 
+    <fieldset>
+  <label for="pseudo"></label>
+  <div class="aide-surgissante" id="pseudo_div"> </div>
+    <label id="etiquette" title="Ton nom sera XXXSupraPotatoXXX">Pseudonyme</label> <br>
+    <input type="text" id="text" name="pseudo" class="textInput">
+    <div id="name_erreur"></div>
+  </fieldset>
+  <div id="Password_div">
+  <div class="aide-surgissante" id="password-help"> </div>
+
+    <label id="etiquette2" title="Choisie ce que tu veux comme mots de passe">Password</label> <br>
+    <input type="password" name="password" class="textInput">
+</div>
+<div id="pass_confirm_div">
+    <label>Password confirm</label> <br>
+    <input type="password" name="password_confirm" class="textInput">
+    <div id="password_erreur"></div>
+</div>
+<div>
+    <input type="submit" name="inscrire" value="S'inscrire" class="btn">
+</div>
+</form>
+</div>
+  <script src="scripts/Javascript.js"></script>
+  <footer>
+    <a href="https://discord.com"><div id="Discord"></div></a>
+    <a href="https://github.com"><div id="Github"></div></a>
+    <a href="https://www.reddit.com/"><div id="Reddit"></div></a>
+    <a href="https://store.steampowered.com/"><div id="Steam"></div></a>
+    <a href="https://www.youtube.com/"><div id="Youtube"></div></a>
+    <h5>©opyright Frédérick Paradis Pouliot TechnoWeb 2020-2021</h5>
+    <script  src="scripts/LienWeb.js"></script>
+  </footer>
+  <script src="scripts/texte_defaut.js"></script>
+  <script src="scripts/Aide-contexte.js"></script>
+  <script src="scripts/hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+    <title>Vignette-détail des jeux</title>
+   
+    <style>
+        body
+        {
+            background-image: url("image/background.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        .vignette
+        {
+            background-color:gray;
+            height:200px;
+            width:200px;
+            border:1px black solid;
+            border-radius:100px;
+            float:left;
+            margin-right:10px;
+            cursor:pointer;
+            overflow:hidden;
+        }
+        .vignette:hover
+        {
+            opacity:0.7;
+            cursor:pointer;
+        }
+        .vignette img
+        {
+            height:200px;
+        }
+        #zone-affichage
+        {
+            background-color:purple;
+            width:700px;
+            height:500px;
+            float:left;
+            margin-left:200px;
+            margin-top:10px;
+            border:solid 3px #333333;
+            border-radius:30px;
+        }
+        .detail
+        {
+            display:none;
+			width:700px;
+            height:700px;
+            border:solid 1px black;			
+        }
+		
+		.nom
+		{
+			height:10px;
+            font-size:30px;
+            margin-right:auto;
+            margin-left:auto;
+		}
+		.description
+		{
+			float:left;
+			width:300px;
+		}
+		
+		.illustration
+		{
+			float:left;
+			width:300px;
+		}
+		
+    </style>
+    
+    
+</head>
+<body>
+    <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <!-- icône hamburger avec animation CSS -->
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </span>
+        <ul class="menu" id="js-menu">
+          <li><a href="index.html"><span class="fab fa-fort-awesome-alt"></span>Accueil</a></li>
+          <li><a href="Article_Index.html">Article<span class="fas fa-sort-down"></span></a>
+          <ul>
+            <li><a href="Article1.html">Age of Mythology</a></li>
+            <li><a href="Article2.html">Age of Mythology EX:Titan</a></li>
+            <li>
+              <a href="Article3.html">Age of Mythology EX:Tale of the dragon</a>
+            </li>
+          </ul>
+          <li><a href="Mission.html">Mission</a></li>
+          <li><a href="Membre.html"><span class="fas fa-id-card"></span>Membre</a></li>
+          <li><a href="Contact.html"><span class="fas fa-user-secret"></span>Contact</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+    <h1>Les jeux de la compagnie</h1>
+    <div class="vignette" id="ageofempire">
+        <img src="image/miniimage/1.png" alt="image/miniimage/1.png"/>
+    </div>
+    <div class="vignette" id="ageofempire2">
+        <img src="image/miniimage/2.png" alt="image/miniimage/2.png"/>
+    </div>
+    <div class="vignette" id="ageofempire3">
+        <img src="image/miniimage/3.png" alt="image/miniimage/3.png"/>
+    </div>
+    <div class="vignette" id="ageofempire4">
+        <img src="image/miniimage/4.png" alt="image/miniimage/4.png"/>
+    </div>
+    <div class="vignette" id="ageofmythology">
+        <img src="image/miniimage/5.png" alt="image/miniimage/5.png"/>
+    </div>
+    
+    
+    <div id="zone-affichage">
+
+	
+        
+    </div>
+    
+	
+    <div class="detail" id="detail-ageofempire">
+        <h4 class="nom">Age of Empires</h4>
+        
+        <img class="illustration" src="image/miniimage/1.png" alt="image/miniimage/1.png"/>
+        
+        <div class="description">
+            <h5>Histoire</h5>
+            <p>Age of Empires est programmé en C++ et en assembleur. Le code est au départ conçu en une seule partie, mais, au milieu du développement, la longueur du code commence à inquiéter les concepteurs. Les programmeurs Angelo Laudon et Tim Deen décident alors de scinder le code en deux : une partie pour le moteur de jeu (Genie) et une partie pour le jeu lui-même (Tribe). Cette amélioration se révèle être réussie et permet aux programmeurs de conserver une conception orientée objet.</p>
+            <a href="https://www.ageofempires.com/games/aoe/">Lien vers la page du jeu</a>
+        </div>
+    
+    </div>
+    <div class="detail" id="detail-ageofempire2">
+        <h4 class="nom">Age of Empires II</h4>
+        
+        <img class="illustration" src="image/miniimage/2.png" alt="image/miniimage/2.png"/>
+        
+        <div class="description">
+            <h5>Histoire</h5>
+            <p>Lors du développement d'Age of Empires II, l’équipe chargée des graphismes fait d’importants progrès, en incorporant notamment un nouveau système de rendu du terrain plus puissant que celui de Age of Empires</p>
+            <a href="https://www.ageofempires.com/games/aoeiide/">Lien vers la page du jeu</a>
+        </div>
+    
+    </div>    
+	<div class="detail" id="detail-ageofempire3">
+        <h4 class="nom">Age of Empires III</h4>
+        
+        <img class="illustration" src="image/miniimage/3.png" alt="image/miniimage/3.png"/>
+        
+        <div class="description">
+            <h5>Histoire</h5>
+            <p>Pour développer Age of Empires III, ils réutilisent le même moteur graphique mais en y intégrant les moteurs physiques Havok pour la version Windows et PhysX pour la version Mac OS. Les développeurs intègrent également de nouvelles options graphiques comme le bloom effect et le support pour le pixel shader 3.0.</p>
+            <a href="https://www.ageofempires.com/games/aoeiiide">Lien vers la page du jeu</a>
+        </div>
+        <div class="detail" id="detail-ageofempire4">
+            <h4 class="nom">Age of Empires IV</h4>
+            
+            <img class="illustration" src="image/miniimage/4.png" alt="image/miniimage/4.png"/>
+            
+            <div class="description">
+                <h5>Histoire</h5>
+                <p>Le 21 août 2017, Microsoft a annoncé Age of Empires IV, développé par Relic Entertainment.Le vice-président exécutif des jeux de Microsoft, Phil Spencer, a confirmé le 11 juin 2019 que Age of Empires IV est toujours en développement, avec plus d'informations à venir plus tard en 2019. Le 14 novembre 2019, des images de gameplay d'Age of Empires IV ont été montrées lors de l'événement XO19. Il montrait la guerre médiévale entre les forces anglaises et mongoles. La sortie d'Age of Empires IV aurait lieu en 2021.</p>
+                <a href="https://www.ageofempires.com/games/age-of-empires-iv/">Lien vers la page du jeu</a>
+                </div>
+            </div>
+            <div class="detail" id="detail-ageofmythology">
+                <h4 class="nom">Age of Mythology</h4>
+                
+                <img class="illustration" src="image/miniimage/5.png" alt="image/miniimage/5.png"/>
+                
+                <div class="description">
+                    <h5>Histoire</h5>
+                    <p> En parallèle du développement de Age of Empires II, Ensemble Studios commence à travailler sur leur premier moteur 3D, qu'ils baptisent BANG ! Engine, dont le développement prend quatre ans et qu'ils utilisent pour Age of Mythology.</p>
+                    <a href="https://www.ageofempires.com/games/aom/">Lien vers la page du jeu</a>
+                </div>
+                </div>
+    </div>    
+   <script src="scripts/vignette.js"></script>
+   <script src="scripts/hamburger.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Site Web HTML</title>
+    <link rel="stylesheet" href="StyleCss/General.css" />
+    <link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+  integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+  crossorigin="anonymous"
+/>
+<link rel="stylesheet" href="StyleCss/Index.css">
+<script src="scripts/Compte à Rebour.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <!-- icône hamburger avec animation CSS -->
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+      </span>
+        <ul class="menu" id="js-menu">
+          <li><a href="index.html"><span class="fab fa-fort-awesome-alt"></span>Accueil</a></li>
+          <li><a href="Article_Index.html">Article<span class="fas fa-sort-down"></span></a>
+          <ul>
+            <li><a href="Article1.html">Age of Mythology</a></li>
+            <li><a href="Article2.html">Age of Mythology EX:Titan</a></li>
+            <li>
+              <a href="Article3.html">Age of Mythology EX:Tale of the dragon</a>
+            </li>
+          </ul>
+          <li><a href="Mission.html">Mission</a></li>
+          <li><a href="Membre.html"><span class="fas fa-id-card"></span>Membre</a></li>
+          <li><a href="Contact.html"><span class="fas fa-user-secret"></span>Contact</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <h1>Accueil</h1>
+    </header>
+    <div class="conteneur">
+    <div id="compte_a_rebours"></div>
+    <p>Ce site présente le jeu Age Of Mythology et ses extentions. <br>
+    Ceux-ci sont Titan et Tale of the dragon.</p>
+      <label for="pseudo"></label>
+      <form>
+        <div class=box>
+      <div id="connection">
+        <legend>Devenir Membre</legend>
+        <label>Pseudonyme</label> <br>
+        <input type="text" name="pseudo" class="textInput">
+          <label>Password</label> <br>
+          <input type="password" name="password" class="textInput">
+      </form>
+          <input type="submit" name="inscrire" value="Inscription" class="btn">
+      </div>
+    </div>
+        <div id="imagecenterabsolute">
+    <p class="image">
+    <a href="image/Game-cover.jpg" target="_blank"><img src="image/Game-cover.jpg" alt="Age of mythology Game cover"/></a>
+    <a href="image/Titan-cover.jpg" target="_blank"><img src="image/Titan-cover.jpg" alt="Age of mythology Titan CD cover"/></a>
+    <a href="image/tale-cover.jpg" target="_blank"><img src="image/tale-cover.jpg" alt="Age of mythology Tale of the dragon CD cover"/></a>
+    </div>
+  </p>
+</div>
+  <footer>
+    <a href="https://discord.com"><div id="Discord"></div></a>
+    <a href="https://github.com"><div id="Github"></div></a>
+    <a href="https://www.reddit.com/"><div id="Reddit"></div></a>
+    <a href="https://store.steampowered.com/"><div id="Steam"></div></a>
+    <a href="https://www.youtube.com/"><div id="Youtube"></div></a>
+    <h5><a href="Vignette.html">©opyright</a> <a href="accordeon.html">Frédérick Paradis Pouliot</a> <a href="galerie-mobile.html">TechnoWeb 2020-2021</a></h5>
+  </footer>
+  <script src="rebours.js"></script>
+  <script  src="scripts/LienWeb.js"></script>
+  <script src="scripts/hamburger.js"></script>
+  </body>
+</html>

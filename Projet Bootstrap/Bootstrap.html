@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet Bootstrap</title>
+
+    <link rel="stylesheet" href="Bootstrap.css"> 
+
+      <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+  integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Le CSS de Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+
+  <!-- popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"></script>
+
+  <!-- Le JavaScript de Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+  integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+  crossorigin="anonymous"></script>
+
+</head>
+<body>
+  <!-- Le header -->
+    <header class="h-100">
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark mb-3" id="main-nav">
+  
+            <a class="navbar-brand" href="#">Navbar</a>
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                  <a class="nav-link" href="#competence">Compétences</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#projets">Projets</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#progress">Progress</a>
+              </li class="nav-item">
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+            </li class="nav-item">
+          </ul>
+            <button class="navbar-toggler bg-danger" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a href="#" class="dropdown-item">lien 1</a>
+                            <a href="#" class="dropdown-item">lien 2</a>
+                            <a href="#" class="dropdown-item">lien 3</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+<form class="form-inline ml-auto">
+<input type="text" class="form-control mr-2">
+<button class="btn btn-outline-success">Recherche</button>
+</form>
+
+</nav>
+    <div class="container w-75 d-flex row-hl flex-wrap justify-content-center">
+
+        
+        <div class="carousel slide" id="carouselExemple" data-ride="carousel" data-interval="5000">
+<ol class="carousel-indicators">
+    <li data-target="carouselExemple" data-slide-to="0" class="active"></li>
+    <li data-target="carouselExemple" data-slide-to="1"></li>
+    <li data-target="carouselExemple" data-slide-to="2"></li>
+    <li data-target="carouselExemple" data-slide-to="3"></li>
+    <li data-target="carouselExemple" data-slide-to="4"></li>
+</ol>
+<div class="jumbotron text-center">
+  <h1 class="display-4">Welcome To My Website!</h1>
+  <p class="lead">Unga bunga</p>
+  <hr>
+  <p></p>
+  <a class="btn btn-primary btn-lg" href="#" role="button">Read More</a>
+</div>
+
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="https://images.unsplash.com/photo-1606146485652-75b352ce408a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="#" class="d-block">
+    </div>
+    <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1603322199363-14380ec2ba31?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80" alt="#" class="d-block">
+    </div>
+    <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1574790398664-0cb03682ed1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80" alt="#" class="d-block">
+    </div>
+    <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1574790398664-0cb03682ed1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80" alt="#" class="d-block">
+    </div>
+    <div class="carousel-item">
+        <img src="https://images.unsplash.com/photo-1574790398664-0cb03682ed1c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1502&q=80" alt="#" class="d-block">
+    </div>
+</div>
+
+<a href="#carousel-exemple" class="left carousel-control-prev" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Précédent</span>
+</a>
+
+<a href="#carousel-exemple" class="right carousel-control-next" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Suivant</span>
+</a>
+        </div>  
+    </div>
+  </header>
+  <div class="container w-25">
+    <!-- Déclencheur-->
+    <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">Vous avez une question ?</button>
+
+    <!-- Modal -->
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Question ?</h5>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  Dies ist eine Nachricht auf Deutsch. Ich verstehe, dass Sie Lorem Ipsum haben möchten, aber nein. Sie haben jetzt die Möglichkeit, diesen Text zu übersetzen, um die Zukunft zu entdecken.
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-dismiss="modal">Non</button>
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+<section class="d-flex flex-sm-column col-sm container w-75" id="competence">
+  <div class="row">
+  <h1 class="text-center text-danger">Compétences</h1>
+  <div class="jumbotron text-center d-flex flex-sm-column flex-md-row">
+    <i class="fas fa-battery-quarter"></i>
+    <h3 class="col-sm">Raptor Jésus</h3>
+    <p class="lead col-sm">Le pouvoir du raptor jésus est parmi chaque morceau de HTML</p>
+    <hr>
+    
+    <i class="fas fa-battery-half"></i>
+    <h3 class="col-sm">Raptor Jésus</h3>
+    <p class="lead col-sm">Le pouvoir du raptor jésus est parmi chaque morceau de HTML</p>
+    <hr>
+   
+    <i class="fas fa-battery-full"></i>
+    <h3 class="col-sm">Raptor Jésus</h3>
+    <p class="lead col-sm">Le pouvoir du raptor jésus est parmi chaque morceau de HTML</p>
+    <hr>
+    
+</div>
+  </div>
+</section>
+
+<section class="container" id="projets">
+  <div class=" d-flex flex-wrap ">
+  <div class="card text-center">
+    <div class="card-body">
+        
+        <img class="" src="https://source.unsplash.com/random/300x300">
+        <h4 class="card-title ">Card Title</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
+        <a class="btn btn-dark" href="#">Read More</a>
+    </div>
+</div>
+<div class="card text-center">
+  <div class="card-body">
+     
+      <img class="" src="https://source.unsplash.com/random/300x300">
+      <h4 class="card-title ">Card Title</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
+      <a class="btn btn-dark" href="#">Read More</a>
+  </div>
+</div>
+<div class="card text-center">
+  <div class="card-body">
+      
+      <img class="" src="https://source.unsplash.com/random/300x300">
+      <h4 class="card-title ">Card Title</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
+      <a class="btn btn-dark" href="#">Read More</a>
+  </div>
+</div>
+<div class="card text-center">
+  <div class="card-body">
+     
+      <img class="" src="https://source.unsplash.com/random/300x300">
+      <h4 class="card-title ">Card Title</h4>
+      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, perspiciatis.</p>
+      <a class="btn btn-dark" href="#">Read More</a>
+  </div>
+</div>
+</div>
+</section>
+<br> <br> <br> <br>
+<section class="container w-75" id="progress">
+  <h1 class="text-center ">Progress</h1>
+  <h4 class="text-center">HTML</h4>
+  <div class="progress">
+    <div class="progress-bar bg-danger" style="width:90%;">90%</div>
+</div>
+<br>
+<h4 class="text-center">CSS</h4>
+<div class="progress">
+    <div class="progress-bar" style="width:85%;">85%</div>
+</div>
+<br>
+<h4 class="text-center">JavaScript</h4>
+<div class="progress">
+    <div class="progress-bar bg-dark" style="width:55%;">55%</div>
+</div>
+<br>
+<h4 class="text-center">Bootstrap</h4>
+<div class="progress">
+  <div class="progress-bar bg-success" style="width:75%;">75%</div>
+</div>
+<br>
+</section>
+<br> <br> <br>
+<section class="container w-75" id="contact">
+  <div class="text-center">
+ <h1>Contact</h1>
+ <h5>Sweet Sweet Potato</h6>
+ <br>
+ <h3>Vous avez une question</h3>
+ <h6>Bien moi, NON</h6>
+ <br>
+ </div>
+ <form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input class="form-control" type="text" id="name" placeholder="Enter name">
+</div>
+<div class="form-group">
+  <label for="email">Email</label>
+  <input class="form-control form-control-lg" type="email" id="email" placeholder="Enter email">
+  <small class="text-muted">Your email will BE shared with everyone and your private life will be public</small>
+</div>
+<div class="form-group">
+  <label for="message">Message</label>
+  <textarea class="form-control" id="message" rows="3"></textarea>
+</div>
+<button class="btn btn-light btn-block" type="submit">Submit</button>
+ </form>
+</section>
+
+<br> <br> <br> <br> <br> <br> <br>
+<footer class="">
+<div class="text-center">
+  <p class="text-dark"><i class="fas fa-copyright"></i>opy<i class="fas fa-registered"></i>ight &copy;
+    <span id="annee"></span> 
+    <a href="https://www.youtube.com/"><i class="fab fa-youtube text-danger" id="bg-danger"></i></a> 
+    <a href="https://www.google.ca/?hl=fr"><i class="fab fa-google text-primary"></i></a> 
+    <a href="https://www.paypal.com/ca/home"><i class="fab fa-paypal text-secondary"></i></a> Frédérick Paradis-Pouliot</p> 
+  </div>
+  </footer>
+</body>
+<script>
+  $('body').scrollspy({target: '#main-nav'});
+    /*
+    $('.carousel').carousel ({
+        pause: "null"
+    }); */
+
+    document.getElementById('annee').innerHTML = new Date().getFullYear();
+
+
+    // Activate Carousel
+    $(document).ready(function(){
+$("#carousel-exemple").carousel();
+
+// Enable Carousel Indicators
+$(".carousel-item").click(function(){
+    $("#carousel-exemple").carousel(0);
+  });
+  $(".carousel-item").click(function(){
+    $("#carousel-exemple").carousel(1);
+  });
+  $(".carousel-item").click(function(){
+    $("#carousel-exemple").carousel(2);
+  });
+  $(".carousel-item").click(function(){
+    $("#carousel-exemple").carousel(3);
+  });
+  $(".carousel-item").click(function(){
+    $("#carousel-exemple").carousel(4);
+  });
+
+// Enable Carousel Controls
+$(".left").click(function(){
+    $("#carousel-exemple").carousel("prev");
+  });
+  $(".right").click(function(){
+    $("#carousel-exemple").carousel("next");
+  });
+});
+</script>
+</html>
+
