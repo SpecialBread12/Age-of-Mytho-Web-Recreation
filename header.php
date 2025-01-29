@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site Web HTML</title>
+    <title>Age of Mytho Retold</title>
     <link rel="stylesheet" href="StyleCss/General.css" />
     <link
         rel="stylesheet"
@@ -30,15 +30,12 @@
                     <ul>
                         <li><a href="Article1.html">Age of Mythology</a></li>
                         <li><a href="Article2.html">Age of Mythology EX:Titan</a></li>
-                        <li>
-                            <a href="Article3.html">Age of Mythology EX:Tale of the dragon</a>
-                        </li>
-                    </ul>
-                <li><a href="Mission.html">Mission</a></li>
-                <li><a href="Membre.html"><span class="fas fa-id-card"></span>Membre</a></li>
-                <li><a href="Contact.html"><span class="fas fa-user-secret"></span>Contact</a></li>
-                <li><a href="FAQ.html">FAQ</a></li>
+                        <li­><a href="Article3.html">Age of Mythology EX:Tale of the dragon</a>
+                </li>
+                <li><a href="Acticle4.html">Age of Mythology Retold</a></li>
+            </ul>
+            <li><a href="Mission.html">Mission</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
             </ul>
         </nav>
-        <h1>Accueil</h1>
     </header>
