@@ -1,0 +1,189 @@
+/*css reset*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: arial, verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/*image background*/
+body {
+  background-image: url("../image/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  float: center;
+  text-align: center;
+  background-size: cover;
+  color: white;
+}
+
+nav li {
+  flex: 1 1 auto;
+  position: relative;
+  background-color: blue;
+}
+
+nav li:hover {
+  background-color: rgb(128, 128, 255);
+}
+
+nav li a {
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  flex: 1 1 auto;
+  color: rgb(251, 255, 21);
+  font-weight: bold;
+  border: 3px solid gold;
+  border-radius: 50px;
+}
+
+nav li a:hover {
+  color: gold;
+}
+
+nav li a.actif {
+  color: gold;
+  background-color: red;
+}
+
+nav li a.actif:hover {
+  color: rgb(38, 38, 253);
+  background-color: white;
+}
+
+/*pas de petit point*/
+nav ul {
+  display: flex;
+  list-style-type: none;
+  text-align: center;
+}
+
+/*menu déroulant*/
+nav ul li ul {
+  display: none;
+  width: 100%;
+  z-index: 1000;
+}
+
+nav ul li:hover ul {
+  display: block;
+  /*définir un conteneur flexible pour le menu*/
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/*mettre les sous-élément en block
+nav li:hover ul li {
+  float: none;
+}
+*/
+/*sorti les bouton du flux*/
+nav li ul {
+  position: absolute;
+}
+
+/*image centrée*/
+
+.image {
+  text-align: center;
+}
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+  width: 85%;
+  height: 30px;
+  border: 0;
+  background-color: #d5d5d5;
+}
+
+@media screen and (max-width: 600px) {
+  nav ul {
+    /*met le menu en collone*/
+    flex-direction: column;
+  }
+}
+.conteneur {
+  height: 100vh;
+}
+
+#Discord,
+#Youtube,
+#Github,
+#Reddit,
+#Steam {
+  display: inline-block;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu a {
+  display: flex;
+  justify-content: center;
+}
+
+/* Menu hamburger */
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 2em;
+  color: white;
+  position: absolute;
+  top: 0.2em;
+  margin-left: 2vh;
+}
+
+/* icone hamburger animée en CSS */
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #fff;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+/* classe utilisée dans js pour changer l'icone */
+.change .bar1 {
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/* tablette */
+@media screen and (min-width: 768px) and (max-width: 980px) {
+  .menu {
+    justify-content: space-between;
+  }
+}
+
+/* cellulaire */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .navbar-toggle {
+    display: block;
+  }
+
+  /* cacher le menu */
+  .menu {
+    display: none;
+  }
+
+  /* barre de menu */
+  .navbar {
+    display: block;
+    position: relative;
+  }
+  /* classe utilisée dans le js pour ouvrir le menu */
+  .active {
+    display: flex;
+    flex-direction: column;
+  }
+}

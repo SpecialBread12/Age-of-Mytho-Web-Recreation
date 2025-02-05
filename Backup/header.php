@@ -12,7 +12,6 @@
         integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
         crossorigin="anonymous" />
     <link rel="stylesheet" href="StyleCss/Index.css">
-    <link rel="stylesheet" href="StyleCss/article4.css">
     <script src="scripts/Compte à Rebour.js" defer></script>
 </head>
 
@@ -26,17 +25,17 @@
                 <div class="bar3"></div>
             </span>
             <ul class="menu" id="js-menu">
-                <li><a href="index.php"><span class="fab fa-fort-awesome-alt"></span>Accueil</a></li>
-                <li><a href="Article_Index.php">Article<span class="fas fa-sort-down"></span></a>
+                <li><a href="index.html"><span class="fab fa-fort-awesome-alt"></span>Accueil</a></li>
+                <li><a href="Article_Index.html">Article<span class="fas fa-sort-down"></span></a>
                     <ul>
-                        <li><a href="Article1.php">Age of Mythology</a></li>
-                        <li><a href="Article2.php">Age of Mythology EX : Titan</a></li>
-                        <li­><a href="Article3.php">Age of Mythology EX : Tale of the dragon</a>
+                        <li><a href="Article1.html">Age of Mythology</a></li>
+                        <li><a href="Article2.html">Age of Mythology EX:Titan</a></li>
+                        <li­><a href="Article3.html">Age of Mythology EX:Tale of the dragon</a>
                 </li>
-                <li><a href="Article4.php">Age of Mythology : Retold</a></li>
-
+                <li><a href="Acticle4.html">Age of Mythology Retold</a></li>
             </ul>
-            <li><a href="Mission.php">Mission</a></li>
+            <li><a href="Mission.html">Mission</a></li>
+            <li><a href="FAQ.html">FAQ</a></li>
             </ul>
         </nav>
     </header>

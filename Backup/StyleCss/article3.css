@@ -1,0 +1,48 @@
+.accueil {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+h1 {
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 120px;
+  text-align: center;
+  color: #363636;
+  width: 100%;
+}
+.section {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.s1 {
+  background: url("../image/Gameplay_dragon1.jpg") no-repeat 0 0 fixed;
+  background-size: cover;
+}
+.s2 {
+  background: url("../image/Gameplay_dragon2.jpg") no-repeat 0 0 fixed;
+  background-size: cover;
+}
+.blocTxt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 5px;
+}
+.sousTitreTxt {
+  font-size: 45px;
+  text-align: center;
+}
+.txt {
+  font-size: 18px;
+  padding: 10px 40px;
+  color: black;
+}
