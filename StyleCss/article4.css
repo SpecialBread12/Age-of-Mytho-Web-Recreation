@@ -1,0 +1,22 @@
+p, h1{
+    color:black;
+    padding-left: 10mm;
+    padding-right: 10mm;
+}
+
+.image-tga{
+    padding-top: 10mm;
+    width: 40%;
+    height: 400px;
+}
+
+
+body {
+    background-image: url("../image/age-of-mythology-retold.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    float: center;
+    text-align: center;
+    background-size: cover;
+    color: white;
+  }
