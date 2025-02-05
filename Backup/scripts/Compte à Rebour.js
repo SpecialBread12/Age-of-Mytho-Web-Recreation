@@ -15,17 +15,28 @@
     
         if (total_secondes > 0)
         {
+            var annee = Math.floor(total_secondes / (60 * 60 * 24 * 365.25));
             var jours = Math.floor(total_secondes / (60 * 60 * 24));
             var heures = Math.floor((total_secondes - (jours * 60 * 60 * 24)) / (60 * 60));
             minutes = Math.floor((total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60))) / 60);
             secondes = Math.floor(total_secondes - ((jours * 60 * 60 * 24 + heures * 60 * 60 + minutes * 60)));
     
             var et = "et";
+            var mot_annee = "annee";
             var mot_jour = "jours,";
             var mot_heure = "heures,";
             var mot_minute = "minutes,";
             var mot_seconde = "secondes";
     
+            if (annee == 0)
+            {
+                annee = '';
+                mot_annee = '';
+            }
+            else if (annee == 1)
+            {
+                mot_annee = 'annee,';
+            }
             if (jours == 0)
             {
                 jours = '';
@@ -72,7 +83,7 @@
                 et = "";
             }
     
-            compte_a_rebours.innerHTML = prefixe + jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde;
+            compte_a_rebours.innerHTML = prefixe + annee + ' ' + mot_annee + jours + ' ' + mot_jour + ' ' + heures + ' ' + mot_heure + ' ' + minutes + ' ' + mot_minute + ' ' + et + ' ' + secondes + ' ' + mot_seconde;
         }
         else
         {
